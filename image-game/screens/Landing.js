@@ -1,16 +1,14 @@
 import React from "react";
 import { ImageBackground, StyleSheet, View, Image, Text } from "react-native";
+// image-game-bkg vector art by lavarmsg
 import colors from "../config/colors";
 
 function Landing(props) {
   return (
     <ImageBackground
       style={styles.background}
-      source={require("../assets/three-whiskeys.jpg")}
+      source={require("../assets/image-game-bkg.png")}
     >
-      <View style={styles.logoContainer}>
-        <Image style={styles.logo} source={require("../assets/tig-logo.png")} />
-      </View>
       <View style={styles.usernameEntry}></View>
       <View style={styles.roomCodeEntry}></View>
     </ImageBackground>
@@ -26,17 +24,13 @@ const styles = StyleSheet.create({
   },
   usernameEntry: {
     width: "100%",
-    height: 70,
+    height: 40,
     backgroundColor: colors.primary,
   },
   roomCodeEntry: {
     width: "100%",
-    height: 70,
-    backgroundColor: colors.gray,
-  },
-  logo: {
-    bottom: 300,
-    resizeMode: contain,
+    height: 40,
+    backgroundColor: colors.mint,
   },
 });
 
